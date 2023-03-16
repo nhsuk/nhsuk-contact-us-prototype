@@ -102,6 +102,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   border-top: 0;
 
   .beta-hub-sibling-nav--current {
+    list-style-type: none;
     border-left: 4px solid $color_nhsuk-black;
     color: $color_nhsuk-black;
     margin-left: -12px;
@@ -109,6 +110,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   }
 
   .beta-hub-sibling-nav__item {
+    list-style-type: none;
     padding-bottom: nhsuk-spacing(1);
     padding-top: nhsuk-spacing(1);
   }
