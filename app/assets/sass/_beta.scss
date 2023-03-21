@@ -227,19 +227,32 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   }
 }
 
+
 // toggle button
 // only shows when screen can't fit all nav items
 .beta-nhsuk-header__menu-toggle {
-  // @include toggle-button();
-  display: flex;
-  border: none;
-  text-decoration-color: $color_nhsuk-white;
-  text-decoration-line: underline;
-  font-size: 14px;
-  font-weight: 400;
-  padding-right:30px;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 4px solid transparent;
+  border-radius: 0;
+  border-top: 4px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  text-decoration: underline;
+  vertical-align: top;
   visibility: hidden;
+  width: auto;
   z-index: 1;
+
+  &.beta-nhsuk-header__navigation-link {
+    padding-right: 30px;
+  }
 
   @include mq($from: desktop) {
     display: none;
@@ -248,70 +261,28 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   &.js-show {
     display: block;
     visibility: visible;
-    display: flex;
-    align-items: center;  
-    justify-content: center;
   }
 
-}
-
-.beta-nhsuk-header__arrow {
-  margin-left: 10px;
-}
-
-
-.beta-nhsuk-header__menu-toggle[aria-expanded='true'] {
-  text-decoration: none;
-
-  .beta-nhsuk-header__arrow {
-    transform: rotate(180deg);
-  }
-
-}
-
-.beta-nhsuk-header__menu-toggle {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  color: white;
-  font: inherit;
-  line-height: normal;
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-
-  font-size: 0.875rem;
-  line-height: 1.71429;
-  padding: 10px 12px;
-
-  border-bottom: 4px solid transparent;
-  border-top: 4px solid transparent;
-
-  @include mq($from: tablet) {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 12px 16px;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-  
   &:focus {
     text-decoration: none;
-    background-color: #ffeb3b;
-    border-bottom: 4px solid #212b32;
-    box-shadow: none;
-    color: #212b32;
-    outline: 4px solid transparent;
-    outline-offset: 4px;
-    text-decoration: none;
-  }
 
+    .beta-nhsuk-icon__chevron-down {
+      fill: $color_nhsuk-black;
+    }
+  }
+}
+
+.beta-nhsuk-icon__chevron-down {
+  fill: $color_nhsuk-white;
+  height: 24px;
+  position: absolute;
+  right: 4px;
+  transform: rotate(90deg);
+  width: 24px;
+
+  .beta-nhsuk-header__menu-toggle[aria-expanded='true'] & {
+    transform: rotate(270deg);
+  }
 }
 
 // container
@@ -353,7 +324,9 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 // a tag
 .beta-nhsuk-header__navigation-link {
   color: $color_nhsuk-white;
-  padding: 10px 12px;
+  font-size: $nhsuk-base-font-size;
+  line-height: 1.5;
+  padding: 16px 12px;
   text-decoration: underline;
   white-space: nowrap;
 
@@ -578,7 +551,9 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   height: 40px;
   margin: 0;
   padding: 0 16px;
-  width: 100%;
+  @include mq($until: tablet) {
+    width: 100%;
+  }
 }
 
 .nhsuk-search__submit {
@@ -615,5 +590,31 @@ border-bottom: 1px solid #d8dde0;
   margin-bottom: 16px!important;
 }
 
+/**
+ * Inset text component
+ * Add cta buttons
+ */
+ .nhsuk-button--beta-login {
+  background-color: $color_nhsuk-blue;
+  box-shadow: 0 4px 0 $color_shade_nhsuk-blue-50;
+  margin-bottom: 0;
+  margin-right: 10px;
+
+  &:active {
+    background-color: $color_shade_nhsuk-blue-50;
+  }
+
+  &:hover {
+    background-color: darken($color_nhsuk-blue, 12%);
+  }
+
+  &:focus:hover {
+    background-color: $nhsuk-focus-color;
+  }
+
+  &:active:hover {
+    background-color: $color_shade_nhsuk-blue-50;
+  }
+}
 
 

@@ -30,24 +30,30 @@
 // Search
 ////////////////////////////////////////////////
 
-.nhsuk-header__logo {
-  float: none;
-}
+// .nhsuk-header__logo {
+//   @include mq($until: tablet) {
+//     float: none;
+//   }
+// }
 
 .nhsuk-header__search-form {
     background-color: transparent;
     padding: 0;
-    width: 100%;
+    @include mq($until: tablet) {
+      width: 100%;
+    }
   }
   
-  .nhsuk-header__content {
-    clear: both;
-  }
+  // .nhsuk-header__content {
+  //   clear: both;
+  // }
   
-  .nhsuk-header__search {
-    float: none;
-    margin-top: 20px;
-  }
+  // .nhsuk-header__search {
+  //   @include mq($until: tablet) {
+  //   float: none;
+  //   margin-top: 20px;
+  //   }
+  // }
   
   .autocomplete__input {
     border: 1px solid #fff;
@@ -152,12 +158,6 @@
     padding-top: 5px;
     width: 44px;
    }
- 
-   .nhsuk-header__container {
-    @include mq($until: desktop) {
-      padding: 14px 10px 0;
-    }
-   }
   
   .new-search-results-wrapper,
   .nhsuk-breadcrumb__back,
@@ -177,20 +177,6 @@
     right: 20px;
   }
   
-  // .search_highlight {
-  //   color: #034583;
-  //   font-weight: bold;
-  //   // background: #ffcd60ad;
-  // }
-  
-  // .nhsuk-list-signage a {
-  //   color: white!important;
-   
-  //   &:visited {
-  //     color: white!important;
-  //   }
-  
-  // }
   
   .nhsuk-header__container {
     position: relative;
@@ -222,9 +208,5 @@
   height: 22px;
   margin: 2px 4px 0 0;
   width: 22px;
-}
-
-.nhsuk-header__search-wrap.js-show {
-  padding-top: 0;
 }
 
