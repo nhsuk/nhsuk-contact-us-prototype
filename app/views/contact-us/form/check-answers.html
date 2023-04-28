@@ -1,0 +1,142 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/home" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/contact-us/index" class="nhsuk-breadcrumb__link">Contact us</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>Check your answers</h1>
+          </div>
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <p>Check your answers and submit your form when you are satisfied.</p>
+
+              <dl class="nhsuk-summary-list">
+
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Reason for contacting NHS website
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    Give feedback
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="#">
+                      Change<span class="nhsuk-u-visually-hidden"> name</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Name
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    Karen Francis
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="#">
+                      Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Part of website
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    Live well<br>Leeds<br> LS2 5ZN
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="#">
+                      Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Contact details
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    <p>07700 900362</p>
+                    <p>karen.francis@example.com</p>
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="#">
+                      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+              
+              </dl>
+
+              <form action="/contact-us/form/confirmation" method="get">
+                <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
+                  Next
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </article>
+
+        
+
+
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+

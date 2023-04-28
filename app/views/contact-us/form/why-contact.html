@@ -1,0 +1,98 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/home" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/contact-us/index" class="nhsuk-breadcrumb__link">Contact us</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>What would you like to contact the NHS website about?</h1>
+          </div>
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+              
+                  <div class="nhsuk-radios">
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+                        To report an accessibility problem
+                      </label>
+                    </div>
+              
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        To give feedback
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+                        To complain
+                      </label>
+                    </div>
+              
+                  </div>
+                </fieldset>
+
+                <div class="nhsuk-u-padding-bottom-9"></div>
+
+
+                <form action="/contact-us/form/check-answers" method="get">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
+                    Next
+                  </button>
+                </form>
+              
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        
+
+
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+
