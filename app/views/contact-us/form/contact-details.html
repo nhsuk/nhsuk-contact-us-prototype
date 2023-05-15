@@ -33,7 +33,7 @@ Contact the NHS website
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-            <h1>Why do you want to contact the NHS website team?</h1>
+            <h1>What are your contact details?</h1>
           </div>
         </div>
         <article>
@@ -41,35 +41,45 @@ Contact the NHS website
             <div class="nhsuk-grid-column-two-thirds">
               <div class="nhsuk-form-group">
 
-                <fieldset class="nhsuk-fieldset">
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      Full name (optional)
+                    </h1>
+                  </legend>
               
-                  <div class="nhsuk-radios">
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                        To ask a question or give feedback about the NHS website
-                      </label>
-                    </div>
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        To report an accessibility problem with the NHS website
-                      </label>
-                    </div>
-
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Something else
-                      </label>
-                    </div>
-              
+                  <div class="nhsuk-hint" id="contact-hint">
+                    We'll use this to reply to you.
                   </div>
+              
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+                  
                 </fieldset>
 
-                <div class="nhsuk-u-padding-bottom-9"></div>
+                <div class="nhsuk-u-padding-bottom-6"></div>
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      Email address
+                    </h1>
+                  </legend>
+              
+                  <div class="nhsuk-hint" id="contact-hint">
+                    We'll use this to reply to you.
+                  </div>
+              
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+                  
+                </fieldset>
+
+                <div class="nhsuk-u-padding-bottom-6"></div>
+              
+              </div>
 
 
                 <form action="" method="get">
