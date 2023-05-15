@@ -56,4 +56,18 @@ router.post('/examples/branching/answer', (req, res) => {
   }
 });
 
+router.post('/contact-us/form/why-contact', (req, res) => {
+  // Make a variable and give it the value from 'know-nhs-number'
+  const whyContact = req.session.data['why-contact'];
+
+  // Check whether the variable matches a condition
+  if (whyContact === 'Yes') {
+    // Send user to next page
+    res.redirect('/contact-us/form/contact-details');
+  } else {
+    // Send user to ineligible page
+    res.redirect('/contact-us/form/sorry');
+  }
+});
+
 module.exports = router;

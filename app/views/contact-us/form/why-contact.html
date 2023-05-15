@@ -43,9 +43,11 @@ Contact the NHS website
 
                 {% from 'radios/macro.njk' import radios %}
 
+                <form action="/contact-us/form/why-contact" method="post">
+
                 {{ radios({
-                  "idPrefix": "example",
-                  "name": "example",
+                  "idPrefix": "whyContact",
+                  "name": "whyContact",
                   "fieldset": {
                     "legend": {
                       "classes": "nhsuk-fieldset__legend--l",
@@ -68,15 +70,14 @@ Contact the NHS website
                   ]
                 }) }}
 
+              </form>
+
               
-                <div class="nhsuk-u-padding-bottom-5"></div>
+                <div class="nhsuk-u-padding-bottom-7"></div>
 
-
-                <form action="" method="get">
-                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
-                    Continue
-                  </button>
-                </form>
+                {{ button({
+                  "text": "Continue"
+                }) }}
               
               </div>
 
