@@ -47,7 +47,7 @@ router.post('/examples/branching/answer', (req, res) => {
   const nhsNumber = req.session.data['know-nhs-number'];
 
   // Check whether the variable matches a condition
-  if (nhsNumber === 'Yes') {
+  if (nhsNumber === 'yes') {
     // Send user to next page
     res.redirect('/docs/examples/branching/answer-yes');
   } else {
@@ -56,13 +56,5 @@ router.post('/examples/branching/answer', (req, res) => {
   }
 });
 
-router.post('/contact-us/form/why-contact', (req, res) => {
-  const whyContact = req.session.data['why-contact'];
-  if (whyContact === 'Yes') {
-    res.redirect('/contact-us/form/contact-details');
-  } else {
-    res.redirect('/contact-us/form/sorry');
-  }
-});
 
 module.exports = router;
