@@ -41,35 +41,43 @@ Contact the NHS website
             <div class="nhsuk-grid-column-two-thirds">
               <div class="nhsuk-form-group">
                 <fieldset class="nhsuk-fieldset">
-              
-                  <div class="nhsuk-radios">
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Yes
-                      </label>
-                    </div>
-
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        No
-                      </label>
-                    </div>
-              
-                  </div>
-                </fieldset>
-
-              </div>
-              <div class="nhsuk-u-padding-bottom-5"></div>
 
 
-                <form action="" method="get">
-                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
-                    Continue
-                  </button>
-                </form>
+                {% from 'radios/macro.njk' import radios %}
+
+                <form action="/contact-us/form/work-for-nhs-answer" method="post">
+
+                {{ radios({
+                  "idPrefix": "workNHS",
+                  "name": "workNHS",
+                  "fieldset": {
+                    "legend": {
+                      "classes": "nhsuk-fieldset__legend--l",
+                      "isPageHeading": true
+                    }
+                  },
+                  "items": [
+                    {
+                      "value": "yes",
+                      "text": "Yes"
+                    },
+                    {
+                      "value": "no",
+                      "text": "No"
+                    }
+                  ]
+                }) }}
+
+
+                <div class="nhsuk-u-padding-bottom-4"></div
+
+              </form>
+
+              {{ button({
+                "text": "Continue"
+              }) }}
+
+
               
               </div>
 

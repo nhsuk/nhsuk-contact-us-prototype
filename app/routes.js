@@ -16,3 +16,12 @@ router.post('/contact-us/form/why-contact-answer', (req, res) => {
       res.redirect('/contact-us/form/sorry');
     }
   });
+
+router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
+    var workNHS = req.session.data['workNHS'];
+    if (workNHS === 'yes') {
+      res.redirect('/contact-us/form/nhs-organisation');
+    } else {
+      res.redirect('/contact-us/form/give-feedback');
+    }
+  });
