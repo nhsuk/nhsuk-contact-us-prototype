@@ -41,35 +41,35 @@ Contact the NHS website
             <div class="nhsuk-grid-column-two-thirds">
               <div class="nhsuk-form-group">
 
-                <fieldset class="nhsuk-fieldset">
-              
-                  <div class="nhsuk-radios">
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                        To ask a question or give feedback about the NHS website
-                      </label>
-                    </div>
-              
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        To report an accessibility problem with the NHS website
-                      </label>
-                    </div>
+                {% from 'radios/macro.njk' import radios %}
 
-                    <div class="nhsuk-radios__item">
-                      <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-                      <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                        Something else
-                      </label>
-                    </div>
-              
-                  </div>
-                </fieldset>
+                {{ radios({
+                  "idPrefix": "example",
+                  "name": "example",
+                  "fieldset": {
+                    "legend": {
+                      "classes": "nhsuk-fieldset__legend--l",
+                      "isPageHeading": true
+                    }
+                  },
+                  "items": [
+                    {
+                      "value": "yes",
+                      "text": "To ask a question or give feedback about the NHS website"
+                    },
+                    {
+                      "value": "yes",
+                      "text": "To report an accessibility problem with the NHS website"
+                    },
+                    {
+                      "value": "no",
+                      "text": "Something else"
+                    }
+                  ]
+                }) }}
 
-                <div class="nhsuk-u-padding-bottom-9"></div>
+              
+                <div class="nhsuk-u-padding-bottom-5"></div>
 
 
                 <form action="" method="get">
