@@ -54,7 +54,7 @@ Contact the NHS website
                   <dd class="nhsuk-summary-list__actions">
               
                     <a href="/contact-us/form/why-contact">
-                      Change<span class="nhsuk-u-visually-hidden"> name</span>
+                      Change<span class="nhsuk-u-visually-hidden"> reason</span>
                     </a>
               
                   </dd>
@@ -66,13 +66,13 @@ Contact the NHS website
                     Full name
                   </dt>
                   <dd class="nhsuk-summary-list__value">
-                    <p>Joe Bloggs</p>
+                    <p>{{ data['full-name'] }}</p>
                   </dd>
               
                   <dd class="nhsuk-summary-list__actions">
               
-                    <a href="#">
-                      Change<span class="nhsuk-u-visually-hidden"> date of birth</span>
+                    <a href="/contact-us/form/contact-details">
+                      Change<span class="nhsuk-u-visually-hidden"> name</span>
                     </a>
               
                   </dd>
@@ -89,8 +89,8 @@ Contact the NHS website
               
                   <dd class="nhsuk-summary-list__actions">
               
-                    <a href="#">
-                      Change<span class="nhsuk-u-visually-hidden"> contact information</span>
+                    <a href="/contact-us/form/contact-details">
+                      Change<span class="nhsuk-u-visually-hidden"> email address</span>
                     </a>
               
                   </dd>
@@ -107,8 +107,8 @@ Contact the NHS website
               
                   <dd class="nhsuk-summary-list__actions">
               
-                    <a href="#">
-                      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+                    <a href="/contact-us/form/work-for-nhs">
+                      Change<span class="nhsuk-u-visually-hidden"> answer</span>
                     </a>
               
                   </dd>
@@ -125,8 +125,8 @@ Contact the NHS website
               
                   <dd class="nhsuk-summary-list__actions">
               
-                    <a href="#">
-                      Change<span class="nhsuk-u-visually-hidden"> contact details</span>
+                    <a href="/contact-us/form/give-feedback">
+                      Change<span class="nhsuk-u-visually-hidden"> query information</span>
                     </a>
               
                   </dd>
@@ -135,6 +135,40 @@ Contact the NHS website
               
               </dl>
 
+              <div class="nhsuk-u-padding-bottom-3"></div>
+
+              <form>
+
+                <div class="nhsuk-form-group">
+              
+                  <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                      <h1 class="nhsuk-fieldset__heading">
+                        Privacy policy agreement
+                      </h1>
+                    </legend>
+              
+                    <div class="nhsuk-hint" id="example-hint">
+                      You must confirm you have read and understood our <a href="javascript:void(0);">privacy policy</a> (opens in a new tab) before sending.
+                    </div>
+              
+                    <div class="nhsuk-checkboxes">
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                          I have read and understood the privacy policy
+                        </label>
+                      </div>
+              
+                    </div>
+                  </fieldset>
+              
+                </div>
+
+                <div class="nhsuk-u-padding-bottom-5"></div>
+              
+              </form>
               <form action="/contact-us/form/confirmation" method="get">
                 <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
                   Next
