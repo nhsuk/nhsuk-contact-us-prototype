@@ -1,0 +1,221 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Contact us</h1>
+    </div>
+
+    <article>
+    
+      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+      
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="/contact-us/book-cancel-appointment">
+                Book, cancel or change an appointment
+              </a>
+            </div>
+          </div>
+        </li>
+      
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="/contact-us/get-medical-help">
+                Find contact details for GPs, hospitals and other services
+              </a>
+            </div>
+          </div>
+        </li>
+      
+    </ul>
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/contact-us/get-medical-help">
+                  Get medical help
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out what to do in an emergency, and how to get non-emergency medical help.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/contact-us/give-feedback-or-complain">
+                  Give feedback or make a complaint
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out how to contact the NHS website, the NHS App, NHS login, or an NHS service with questions and feedback, or to make a complaint.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/using-the-nhs/about-the-nhs/how-to-get-your-medical-records/">
+                  Get your medical records
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>You can see your GP records by asking for them at your GP surgery or going online.</p></div>
+            </div>
+          </div>
+        </li>
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/online-services/find-nhs-number/">
+                  Find your NHS number
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>You can find your NHS Number on any letters you have had from the NHS.</p></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/using-the-nhs/healthcare-abroad/apply-for-a-free-uk-global-health-insurance-card-ghic/">
+                  Apply for a UK GHIC or EHIC
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Apply for a replacement UK GHIC or EHIC card on the phone or online</p></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/prescriptions-and-pharmacies/save-money-with-a-prescription-prepayment-certificate-ppc/">
+                  Buy a prescription prepayment certificate
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out how they work and buy one online.</p></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/nhs-services/visiting-or-moving-to-england/how-to-access-nhs-services-in-england-if-you-are-visiting-from-abroad/">
+                  Access the NHS if you're visiting or moving to England
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Read more about healthcare if you're planning to visit or move to England.</p></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="https://www.nhs.uk/contact-us/contacts-for-professionals/make-a-freedom-of-information-request/">
+                  Make a freedom of information (FOI) request
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Freedom of Information (FOI) requests must be made in writing by post, fax or email.</p></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      
+      <div class="nhsuk-u-margin-top-6 ">
+        <div class="beta-hub-related-links-title">
+          <h2 class="nhsuk-heading-s ">Contacts for professionals</h2>
+        </div>
+        <ul class="beta-hub-related-links">
+          
+            <li class="beta-hub-related-links__list-item">
+              <a href="https://www.nhs.uk/contact-us/contacts-for-professionals/help-improve-website/">
+                Help improve the website
+              </a>
+            </li>
+          
+            <li class="beta-hub-related-links__list-item">
+              <a href="https://www.nhs.uk/contact-us/contacts-for-professionals/make-a-press-enquiry/">
+                Make a media enquiry (journalists only)
+              </a>
+            </li>
+          
+            <li class="beta-hub-related-links__list-item">
+              <a href="https://www.nhs.uk/contact-us/contacts-for-professionals/make-a-freedom-of-information-request/">
+                Make a freedom of information (FOI) request
+              </a>
+            </li>
+          
+            <li class="beta-hub-related-links__list-item">
+              <a href="https://www.nhs.uk/contact-us/contacts-for-professionals/syndicate-nhs-content/">
+                Syndicate NHS content
+              </a>
+            </li>
+
+
+
+        </ul>
+      </div>
+  
+      </article>
+
+
+  </div>
+</div>
+{% endblock %}
+

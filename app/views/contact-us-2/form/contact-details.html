@@ -1,0 +1,105 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+
+      <!-- Go back -->
+      <br>
+      <div class="nhsuk-back-link">
+              <a class="nhsuk-back-link__link" href="../start-page">
+                  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+            </svg>
+      
+                  Go back
+              </a>
+      </div>
+      
+      <!-- Details -->      
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>What are your contact details?</h1>
+            <p class="nhsuk-hint" id="contact-hint">If you'd like a reply to your message we'll only use your details for this purpose</p>
+          </div>
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      Full name (optional)
+                    </h1>
+                  </legend>
+              
+              
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="full-name" name="full-name" type="text">
+                  </div>
+                  
+                </fieldset>
+
+                <div class="nhsuk-u-padding-bottom-6"></div>
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      Email address
+                    </h1>
+                  </legend>
+              
+  
+              
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+                  
+                </fieldset>
+
+                <div class="nhsuk-u-padding-bottom-6"></div>
+              
+              </div>
+
+
+                <form action="give-feedback" method="post">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="post">
+                    Continue
+                  </button>
+                </form>
+              
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        
+
+
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+

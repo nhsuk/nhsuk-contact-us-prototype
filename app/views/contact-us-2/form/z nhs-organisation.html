@@ -1,0 +1,102 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/home" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/contact-us/index-v2" class="nhsuk-breadcrumb__link">Contact us</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>Which NHS organisation do you work for?</h1>
+          </div>
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-form-group">
+                
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      NHS organisation name
+                    </h1>
+                  </legend>
+                  <div class="nhsuk-hint" id="contact-hint">
+                    We'll use this to identify your organisation.
+                  </div>
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+                </fieldset>
+
+                <div class="nhsuk-u-padding-bottom-7"></div>
+
+                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      NHS organisation postcode (optional)
+                    </h1>
+                  </legend>
+                  <div class="nhsuk-hint" id="contact-hint">
+                    We'll use this to identify your organisation.
+                  </div>
+                  <div class="nhsuk-form-group">
+                    <input class="nhsuk-input" id="example" name="example" type="text">
+                  </div>
+                </fieldset>
+
+              </div>
+              <div class="nhsuk-u-padding-bottom-5"></div>
+
+
+                <form action="/contact-us/form/give-feedback" method="get">
+                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
+                    Continue
+                  </button>
+                </form>
+              
+              </div>
+
+            </div>
+          </div>
+        </article>
+
+        
+
+
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+

@@ -33,62 +33,19 @@ Contact the NHS website
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-            <h1>Why do you want to contact the NHS website team?</h1>
+            <h1>Sorry, the website team can only help with the NHS website.</h1>
           </div>
         </div>
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-              <div class="nhsuk-form-group">
-
-                {% from 'radios/macro.njk' import radios %}
-
-                <form action="/contact-us/form/why-contact-answer" method="post">
-
-                {{ radios({
-                  "idPrefix": "whyContact",
-                  "name": "whyContact",
-                  "fieldset": {
-                    "legend": {
-                      "classes": "nhsuk-fieldset__legend--l",
-                      "isPageHeading": true
-                    }
-                  },
-                  "items": [
-                    {
-                      "value": "details",
-                      "text": "To ask a question or give feedback about the NHS website"
-                    },
-                    {
-                      "value": "details",
-                      "text": "To report an accessibility problem with the NHS website"
-                    },
-                    {
-                      "value": "no",
-                      "text": "Something else"
-                    }
-                  ]
-                }) }}
-
-
-                <div class="nhsuk-u-padding-bottom-4">
-              </form>
-
-              {{ button({
-                "text": "Continue"
-              }) }}
-
-            
-
-                
-              
-              </div>
-
+              <p>Find out how to <a href="../index">contact the NHS</a> for any other reason.</p>
+             
             </div>
           </div>
         </article>
 
-        
+
 
 
 
@@ -99,3 +56,4 @@ Contact the NHS website
   </main>
 </div>
 {% endblock %}
+

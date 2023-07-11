@@ -33,62 +33,31 @@ Contact the NHS website
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-            <h1>Why do you want to contact the NHS website team?</h1>
+            <h1>Find contact details for GPs, hospitals and other services</h1>
           </div>
         </div>
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-              <div class="nhsuk-form-group">
 
-                {% from 'radios/macro.njk' import radios %}
-
-                <form action="/contact-us/form/why-contact-answer" method="post">
-
-                {{ radios({
-                  "idPrefix": "whyContact",
-                  "name": "whyContact",
-                  "fieldset": {
-                    "legend": {
-                      "classes": "nhsuk-fieldset__legend--l",
-                      "isPageHeading": true
-                    }
-                  },
-                  "items": [
-                    {
-                      "value": "details",
-                      "text": "To ask a question or give feedback about the NHS website"
-                    },
-                    {
-                      "value": "details",
-                      "text": "To report an accessibility problem with the NHS website"
-                    },
-                    {
-                      "value": "no",
-                      "text": "Something else"
-                    }
-                  ]
-                }) }}
-
-
-                <div class="nhsuk-u-padding-bottom-4">
-              </form>
-
-              {{ button({
-                "text": "Continue"
-              }) }}
-
-            
-
-                
-              
-              </div>
+              <ul>
+                <li><a href="">Find a GP surgery</a></li>
+                <li><a href="">Find a dentist</a></li>
+                <li><a href="">Find a hospital</a></li>
+                <li><a href="">Find all other NHS services</a></li>
+              </ul>
 
             </div>
           </div>
         </article>
 
-        
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 25 July 2019
+            <br>
+            Next review due: 25 July 2022
+          </p>
+        </div>
 
 
 
@@ -99,3 +68,4 @@ Contact the NHS website
   </main>
 </div>
 {% endblock %}
+

@@ -25,3 +25,12 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
       res.redirect('/contact-us/form/give-feedback');
     }
   });
+
+  router.post('/contact-us-2/form/why-contact-answer', (req, res) => {
+    var whyContact = req.session.data['whyContact'];
+    if (whyContact === 'details') {
+      res.redirect('/contact-us-2/form/contact-details');
+    } else {
+      res.redirect('/contact-us-2/form/sorry');
+    }
+  });

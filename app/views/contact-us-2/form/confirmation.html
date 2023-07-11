@@ -8,7 +8,6 @@ Contact the NHS website
 {% endblock %}
 
 {% block beforeContent %}
-
 <!-- Breadcrumbs -->
 <nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
@@ -30,59 +29,24 @@ Contact the NHS website
 <div class="nhsuk-width-container ">
   <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
     <div class="nhsuk-width-container">
+      
+
+      <!-- Details -->      
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-            <h1>Why do you want to contact the NHS website team?</h1>
+            <h1>Your message has been submitted</h1>
           </div>
         </div>
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-              <div class="nhsuk-form-group">
+              <p>Thank you for contacting the NHS website team.</p>
+              <p>We will aim to respond within 2 working days.</p>
 
-                {% from 'radios/macro.njk' import radios %}
+              <p>If you have submitted a query that the NHS website team cannot help with, you may be signposted to another service.</p>
 
-                <form action="/contact-us/form/why-contact-answer" method="post">
-
-                {{ radios({
-                  "idPrefix": "whyContact",
-                  "name": "whyContact",
-                  "fieldset": {
-                    "legend": {
-                      "classes": "nhsuk-fieldset__legend--l",
-                      "isPageHeading": true
-                    }
-                  },
-                  "items": [
-                    {
-                      "value": "details",
-                      "text": "To ask a question or give feedback about the NHS website"
-                    },
-                    {
-                      "value": "details",
-                      "text": "To report an accessibility problem with the NHS website"
-                    },
-                    {
-                      "value": "no",
-                      "text": "Something else"
-                    }
-                  ]
-                }) }}
-
-
-                <div class="nhsuk-u-padding-bottom-4">
-              </form>
-
-              {{ button({
-                "text": "Continue"
-              }) }}
-
-            
-
-                
-              
-              </div>
+              <p><a href="/home">Back to home</a></p>
 
             </div>
           </div>
@@ -99,3 +63,4 @@ Contact the NHS website
   </main>
 </div>
 {% endblock %}
+
