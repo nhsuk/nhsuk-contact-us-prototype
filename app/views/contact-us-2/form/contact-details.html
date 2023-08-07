@@ -33,55 +33,52 @@ Contact the NHS website
       <!-- Details -->      
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-two-thirds">
-            <h1>What are your contact details?</h1>
-            <p class="nhsuk-hint" id="contact-hint">If you'd like a reply to your message we'll only use your details for this purpose.</p>
-          </div>
+
         </div>
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-              <div class="nhsuk-form-group">
 
+              <form method="post" action="give-feedback">
 
-                <div class="nhsuk-u-padding-bottom-6"></div>
-
-                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                <fieldset class="nhsuk-fieldset">
                   <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                     <h1 class="nhsuk-fieldset__heading">
-                      Email address
+                      What are your contact details?
                     </h1>
                   </legend>
-              
-                  <div class="nhsuk-form-group">
-                    <input class="nhsuk-input" id="example" name="example" type="text">
-                  </div>
+    
+                    <div class="nhsuk-hint" id="contact-hint">
+                      If you'd like a reply to your message we'll only use your details for this purpose.
+                    </div>
+    
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="email-address">Email address </label>
+                        <span id="email-address-error" class="field-validation-valid" data-valmsg-for="email-address" data-valmsg-replace="true"></span>
+                        <input class="nhsuk-input" aria-describedby="email-address-error" autocomplete="given-name" type="text" data-val="true" data-val-maxlength="Enter a valid email address" data-val-maxlength-max="35" data-val-required="Enter your email address" id="email-address" maxlength="35" name="email-address" value="">
+                    </div>
+    
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="full-name">Full name (optional)</label>
+                        <span id="lastname-error" class="field-validation-valid" data-valmsg-for="full-name" data-valmsg-replace="true"></span>
+                        <input class="nhsuk-input" autocomplete="full-name" type="text" data-val="true" data-val-maxlength="" data-val-maxlength-max="35" id="LastName" maxlength="50" name="full-name" value="">
+                    </div>
+    
                 </fieldset>
-
-                <div class="nhsuk-u-padding-bottom-6"></div>
-              
-                <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
-                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                    <h1 class="nhsuk-fieldset__heading">
-                      Full name (optional)
-                    </h1>
-                  </legend>
-              
-                  <div class="nhsuk-form-group">
-                    <input class="nhsuk-input" id="full-name" name="full-name" type="text">
-                  </div>
-                  
-                </fieldset>
-
-
-              </div>
-
-
+    
                 <form action="give-feedback" method="post">
                   <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="post">
                     Continue
                   </button>
                 </form>
+    
+
+
+
+
+
+
+
               
               </div>
 
@@ -89,9 +86,9 @@ Contact the NHS website
           </div>
         </article>
 
-        
+      
 
-
+      </fieldset>
 
 
 </main>
