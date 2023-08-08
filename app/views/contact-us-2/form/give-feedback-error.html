@@ -4,7 +4,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Contact the NHS website
+Tell us why you are contacting the NHS website team?
 {% endblock %}
 
 {% block beforeContent %}
@@ -15,7 +15,6 @@ Contact the NHS website
 
 {% block content %}
 <div class="nhsuk-width-container ">
-
   <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
     <div class="nhsuk-width-container">
       
@@ -30,11 +29,10 @@ Contact the NHS website
               </a>
       </div>
       
-
-      <!-- Form-->
+      <!-- Details -->
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-
             <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
               <h2 class="nhsuk-error-summary__title" id="error-summary-title">
                   There is a problem
@@ -42,55 +40,56 @@ Contact the NHS website
               <div class="nhsuk-error-summary__body">
                   <ul class="nhsuk-list nhsuk-error-summary__list">
                     <li>
-                      <a href="#text-area">Describe why you are contacting the NHS website team</a>
+                      <a href="#text-area">Tell us why you are contacting the NHS website team</a>
                     </li>
                   </ul>
               </div>
             </div>
-            
-            
 
-          </div>
-        </div>
 
-        <article>
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-form-group nhsuk-form-group--error">
+              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                <h1 class="nhsuk-fieldset__heading">
+                  Tell us why you are contacting the NHS website team?
+                </h1>
+              </legend>
 
 
               <div class="nhsuk-form-group">
-                <div class="nhsuk-form-group nhsuk-form-group--error">
-                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                    <h1 class="nhsuk-fieldset__heading">
-                      How can we help you?
-                    </h1>
-                  </legend>
-
-                  <div class="nhsuk-hint" id="example-longer-hint">
-                    Describe why you are contacting the NHS website team. Do not include personal or medical information in your message, for example, your NHS number, date of birth, medical diagnosis or medical history.
-                  </div>
-
-                  <span class="nhsuk-error-message" id="example-error">
-                    <span class="nhsuk-u-visually-hidden">Error:</span> Describe why you are contacting the NHS website team
-                  </span>
-                  <textarea class="nhsuk-textarea" id="text-area" name="text-area" rows="10" aria-describedby="text-area-hint"></textarea>
-                  <div class="nhsuk-hint nhsuk-character-count__message" id="more-detail-info">
-                    You have 1500 characters remaining
-                  </div>                 
+                <label class="nhsuk-label" for="example">
+                  Can you provide more detail? 
+                </label>
+                <div class="nhsuk-hint" id="example-longer-hint">
+                  Do not include personal or medical details in your message, for example, do not include your NHS number, date of birth, medical diagnosis, or medical history.
                 </div>
-              </div>
 
-              <form action="check-answers" method="get">
-                  <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
-                    Continue
-                  </button>
-              </form>
-              
+                <span class="nhsuk-error-message" id="example-error">
+                  <span class="nhsuk-u-visually-hidden">Error:</span>Tell us  why you are contacting the NHS website team
+                </span>
+                <textarea class="nhsuk-textarea" id="example-longer" name="example-longer" rows=" 10 " aria-describedby="example-longer-hint"></textarea>
+                <div class="nhsuk-hint nhsuk-character-count__message" id="more-detail-info">
+                  You have 1500 characters remaining
+                </div>             
               </div>
           </div>
-        </article>
 
-    </div>
+          <div class="nhsuk-form-group">
+          </div>
+            <form action="check-answers" method="get">
+              <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+
+        
+
+
+
+
+</main>
+</div>
 
   </main>
 </div>
