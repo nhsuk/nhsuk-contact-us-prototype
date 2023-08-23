@@ -29,8 +29,8 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
   router.post('/contact-us-2/form/why-contact-answer', (req, res) => {
     var whyContact = req.session.data['whyContact'];
     if (whyContact === 'details') {
-      res.redirect('/contact-us-2/form/contact-details');
+      res.redirect('/contact-us-2/form/what-are-your-contact-details');
     } else {
-      res.redirect('/contact-us-2/form/sorry');
+      res.redirect('/contact-us-2/form/sorry-the-website-team-can-only-help-with-the-nhs-website');
     }
   });
