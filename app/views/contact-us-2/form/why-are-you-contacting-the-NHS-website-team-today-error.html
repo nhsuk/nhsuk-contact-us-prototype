@@ -1,12 +1,10 @@
-
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'template-1.html' %}
 {% set mainClasses = 'nhsuk-u-padding-top-0' %}
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Contact the NHS website
+  Why are you contacting the NHS website team today?
 {% endblock %}
 
 {% block beforeContent %}
@@ -46,15 +44,13 @@ Contact the NHS website
                   There is a problem
               </h2>
               <div class="nhsuk-error-summary__body">
-                  <ul class="nhsuk-list nhsuk-error-summary__list">
+                  <ul class="nhsuk-list nhsuk-error-summary__list" role="list">
                     <li>
-                      <a href="#whyContact-error-1">Select why you contacting the NHS website team today</a>
+                      <a href="#whyContact-error-1">Select why you are contacting the NHS website team</a>
                     </li>
                   </ul>
               </div>
             </div>
-
-            <h1>Why are you contacting the NHS website team today?</h1>
           </div>
         </div>
 
@@ -62,12 +58,16 @@ Contact the NHS website
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-              <div class="nhsuk-form-group">
               <div class="nhsuk-form-group nhsuk-form-group--error">
 
                 <fieldset class="nhsuk-fieldset" aria-describedby="example-error-hint example-error-error">
+                  <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                    <h1 class="nhsuk-fieldset__heading">
+                      Why are you contacting the NHS website team?
+                    </h1>
+                  </legend>
                   <span class="nhsuk-error-message" id="whyContact-error">
-                    <span class="nhsuk-u-visually-hidden">Error:</span> Select why you contacting the NHS website team today
+                    <span class="nhsuk-u-visually-hidden">Error:</span> Select why you are contacting the NHS website team
                   </span>
               
                   <form action="/contact-us-2/form/why-contact-answer" method="post">
@@ -92,7 +92,6 @@ Contact the NHS website
                 </fieldset>
               
                 <div class="nhsuk-u-padding-bottom-4"></div>
-              </div>
             </div>
 
             {{ button({
