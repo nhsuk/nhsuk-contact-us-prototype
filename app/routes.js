@@ -34,3 +34,15 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
       res.redirect('/contact-us-2/form/sorry-the-website-team-can-only-help-with-the-nhs-website');
     }
   });
+
+
+// contact-us-2-alternative
+
+  router.post('/contact-us-2-alternative/form/why-contact-answer', (req, res) => {
+    var whyContact = req.session.data['whyContact'];
+    if (whyContact === 'details') {
+      res.redirect('/contact-us-2-alternative/form/what-are-your-contact-details');
+    } else {
+      res.redirect('/contact-us-2-alternative/form/sorry-the-website-team-can-only-help-with-the-nhs-website');
+    }
+  });
