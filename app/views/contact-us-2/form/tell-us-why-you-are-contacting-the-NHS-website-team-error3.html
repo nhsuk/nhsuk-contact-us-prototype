@@ -5,7 +5,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-What are your contact details?
+  Tell us why you are contacting the NHS website team
 {% endblock %}
 
 {% block beforeContent %}
@@ -45,7 +45,7 @@ What are your contact details?
             <div class="nhsuk-error-summary__body">
               <ul class="nhsuk-list nhsuk-error-summary__list">
                 <li>
-                  <a href="#LastName">Tell us why you are contacting the NHS website team</a>
+                  <a href="#example-longer">Tell us why you are contacting the NHS website team</a>
                 </li>
               </ul>
             </div>
@@ -55,23 +55,22 @@ What are your contact details?
             <fieldset class="nhsuk-fieldset" aria-describedby="dob-errors-hint dob-errors-error" role="group">
               <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                 <h1 class="nhsuk-fieldset__heading">
-                  What are your contact details?
+                  Tell us why you are contacting the NHS website team
                 </h1>
               </legend>
-              <div class="nhsuk-hint" id="dob-errors-hint">
-                For example, 15 3 1984
-              </div>
-
 
               <div class="nhsuk-date-input" id="dob-errors">
-
                 <div class="nhsuk-form-group nhsuk-form-group--error">
-                  <label class="nhsuk-label" for="LastName">Email address</label>
-                  <span id="lastname-error" class="field-validation-error nhsuk-error-message" data-valmsg-for="LastName" data-valmsg-replace="true"><span class="nhsuk-u-visually-hidden">Error:</span>Tell us why you are contacting the NHS website team</span>
-                  <input class="nhsuk-input input-validation-error nhsuk-input--error" aria-describedby="lastname-error" autocomplete="family-name" type="text" data-val="true" data-val-maxlength="Enter a valid last name" data-val-maxlength-max="35" data-val-required="Enter your last name" id="LastName" maxlength="35" name="LastName" value="">
-                </div>
-
-
+                  <label class="nhsuk-label" for="example">
+                    Can you provide more detail? 
+                  </label>
+                  <div class="nhsuk-hint" id="example-longer-hint">
+                    Do not include personal or medical details in your message, for example, do not include your NHS number, date of birth, medical diagnosis, or medical history.
+                  </div>
+                  <textarea class="nhsuk-textarea textarea-validation-error nhsuk-textarea--error " id="example-longer" name="example-longer" rows=" 10 " aria-describedby="example-longer-hint-error"></textarea>
+                  <div class="nhsuk-hint nhsuk-character-count__message" id="more-detail-info">
+                    You have 1500 characters remaining
+                  </div>             
               </div>
             </fieldset>
 
