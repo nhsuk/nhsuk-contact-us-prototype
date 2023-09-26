@@ -1,4 +1,3 @@
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'template-1.html' %}
 {% set mainClasses = 'nhsuk-u-padding-top-0' %}
@@ -38,13 +37,12 @@ What are your contact details?
         
 
         <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-two-thirds">
-            <form method="post" action="/find-nhs-number/what-is-your-name">
+            <div class="nhsuk-grid-column-two-thirds">
+                <form method="post" action="/find-nhs-number/what-is-your-name">
                         <div class="nhsuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1">
-              <h2 class="nhsuk-error-summary__title" id="error-summary-title">
-                  There is a problem
-              </h2>
-
+            <h2 class="nhsuk-error-summary__title" id="error-summary-title">
+                There is a problem
+            </h2>
             <div class="nhsuk-error-summary__body">
                 <ul class="nhsuk-list nhsuk-error-summary__list">
                         <li>
@@ -69,7 +67,7 @@ What are your contact details?
                           <label class="nhsuk-label" for="LastName">Email address</label>
                           <span id="lastname-error" class="field-validation-error nhsuk-error-message" data-valmsg-for="LastName" data-valmsg-replace="true"><span class="nhsuk-u-visually-hidden">Error:</span>Enter your email address</span>
                           <input class="nhsuk-input input-validation-error nhsuk-input--error" aria-describedby="lastname-error" autocomplete="family-name" type="text" data-val="true" data-val-maxlength="Enter a valid last name" data-val-maxlength-max="35" data-val-required="Enter your last name" id="LastName" maxlength="35" name="LastName" value="">
-                      </div>
+                        </div>
 
                       <div class="nhsuk-form-group">
                         <label class="nhsuk-label" for="full-name">Full name (optional)</label>
@@ -87,9 +85,8 @@ What are your contact details?
                       </button>
                     </form>
         
-                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8J4GLDlyv11GicMsagMhe05JCk1TAzTPHEjNgkl-uT0BhRHpDFpX0qxsmXSi1lPkd_d2_6dhAuDEd9fvNcu5qW0hHwfMv8bLukSKochW0jPRIRoGAH6RHjE9_e-GOlz6mjN-Ch7Bq6bMh7w2Y8HI0cI">
-            </form>
-          </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8J4GLDlyv11GicMsagMhe05JCk1TAzTPHEjNgkl-uT0BhRHpDFpX0qxsmXSi1lPkd_d2_6dhAuDEd9fvNcu5qW0hHwfMv8bLukSKochW0jPRIRoGAH6RHjE9_e-GOlz6mjN-Ch7Bq6bMh7w2Y8HI0cI"></form>
+            </div>
         </div>
         
             </main>
