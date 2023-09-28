@@ -17,6 +17,7 @@ router.post('/contact-us/form/why-contact-answer', (req, res) => {
     }
   });
 
+
 router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
     var workNHS = req.session.data['workNHS'];
     if (workNHS === 'yes') {
@@ -36,6 +37,8 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
   });
 
 
+
+
 // contact-us-2-alternative
 
   router.post('/contact-us-2-alternative/form/why-contact-answer', (req, res) => {
@@ -46,3 +49,4 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
       res.redirect('/contact-us-2-alternative/form/sorry-the-website-team-can-only-help-with-the-nhs-website');
     }
   });
+
