@@ -59,7 +59,7 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
     if (whyContact === 'details') {
       res.redirect('/contact-us-3/form/what-are-your-contact-details');
     } else {
-      res.redirect('/contact-us-3/form/what-topic-do-you-need-help-with');
+      res.redirect('/contact-us-3/form/sorry-the-website-team-can-only-help-with-the-nhs-website-c');
     }
   });
 
