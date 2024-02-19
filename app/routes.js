@@ -50,3 +50,40 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
     }
   });
 
+
+
+// contact-us-3
+
+  router.post('/contact-us-3/form/why-contact-answer', (req, res) => {
+    var whyContact = req.session.data['whyContact'];
+    if (whyContact === 'details') {
+      res.redirect('/contact-us-3/form/what-are-your-contact-details');
+    } else {
+      res.redirect('/contact-us-3/form/what-topic-do-you-need-help-with');
+    }
+  });
+
+  router.post('/contact-us-3/form/what-topic-do-you-need-help-with', (req, res) => {
+    var whyContact = req.session.data['whyContact'];
+    if (whyContact === 'book-change-cancel-appointment') {
+      res.redirect('../book-cancel-appointment');
+    } 
+    if (whyContact === 'give-feedback-or-complaint') {
+      res.redirect('../give-feedback-or-complain');
+    } 
+    if (whyContact === 'get-medical-help') {
+      res.redirect('../get-medical-help');
+    } 
+    if (whyContact === 'contact-nhs-app') {
+      res.redirect('https://www.nhs.uk/contact-us/nhs-app-contact-us/');
+    } 
+    if (whyContact === 'contact-nhs-login-support') {
+      res.redirect('https://help.login.nhs.uk/contact');
+
+    } else {
+      res.redirect('');
+    }
+  });
+
+
+ 
