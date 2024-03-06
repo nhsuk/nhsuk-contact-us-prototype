@@ -75,7 +75,7 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
       res.redirect('../get-medical-help');
     } 
     if (whyContact === 'contact-nhs-app') {
-      res.redirect('https://www.nhs.uk/contact-us/nhs-app-contact-us/');
+      res.redirect('https://www.nhs.uk/contact-us/nhs-app-contact-us');
     } 
     if (whyContact === 'contact-nhs-login-support') {
       res.redirect('https://help.login.nhs.uk/contact');

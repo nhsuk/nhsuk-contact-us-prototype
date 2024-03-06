@@ -392,6 +392,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   margin-bottom: 0;
 }
 
+// FOOTER
 .beta-nhsuk-footer {
   margin-bottom: 15px;
 
@@ -450,6 +451,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   border-bottom: 10px solid $color_nhsuk-grey-1;
 }
 
+//HEADER
 .beta-nhsuk-header__navigation-item--home {
   @include mq($from: desktop) {
     display: none;
