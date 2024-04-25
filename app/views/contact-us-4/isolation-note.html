@@ -1,0 +1,159 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Contact the NHS website
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/home" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/contact-us/index-v2" class="nhsuk-breadcrumb__link">Contact the NHS</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <h1>Get help with the isolation note</h1>
+          </div>
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <p>Get the answers to common questions about the isolation note.</p>
+              <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p>Get the latest <a href="">NHS information and advice on coronavirus</a>.</p>
+              </div>
+
+              <h2>Common questions</h2>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    I cannot download the note from the confirmation screen. What should I do?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>If you can still see the confirmation page, write down the long reference number and keep it in a safe place.</p>
+                  <p>Then check to see if you have received an email. If you have received the email, tap on the download link.</p>
+                  <p>If you have not received the email, check your spam or junk email folder. If the email has not arrived after a few hours, you can apply for another isolation note. You can backdate the note if you need to.</p>
+                </div>
+              </details>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    I got to the confirmation screen but did not get my email. What should I do?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>If you can still see the confirmation page, write down the long reference number and keep it in a safe place.</p>
+                  <p>You can download the note from this confirmation page, too.</p>
+                  <p>Check your spam or junk email folder. If the email has not arrived after a few hours, you can apply for another isolation note. You can backdate the note if you need to.</p>
+                </div>
+              </details>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    What is the long reference number?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>The 16-digit reference number helps us find your isolation note if you have problems accessing it. Write it down and keep it safe.</p>
+                  <p>It also lets employers check an isolation note is valid. They can do this by using the <a href="">Check an isolation note service</a>.</p>
+                </div>
+              </details>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    I have forwarded the email to my employer but they cannot open the PDF. What should I do?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>Access to your note (the PDF) from the email we sent you is protected. Only you, or someone who knows your date of birth, can access the PDF from the email.</p>
+                  <p>If your employer knows your date of birth, they should be able to download the PDF.</p>
+                  <p>Alternatively:</p>
+                  <ol>
+                    <li>download the PDF from the link in your email</li>
+                    <li>save it</li>
+                    <li>attach it to an email and send it to your employer</li>
+                  </ol>
+                </div>
+              </details>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    Can I get another copy of the note?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>You can download the note as many times as you want from the email. If you no longer have the email,  <a href="">contact us</a>.</p>
+                </div>
+              </details>
+
+              <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                  <span class="nhsuk-details__summary-text">
+                    I am at higher risk from coronavirus, can I get an isolation note?
+                  </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                  <p>You can only get an isolation note if you:</p>
+                  <ul>
+                    <li>get symptoms of coronavirus or test positive</li>
+                    <li>live with someone who has symptoms of coronavirus or tests positive and you are not fully vaccinated</li>
+                    <li>are told to self-isolate by a test and trace service or the NHS COVID-19 app</li>
+                  </ul>
+                  <p>If you cannot work from home and are concerned about having to go to work, talk to your employer. Employers should make sure suitable arrangements are in place so you can go to work.</p>
+                  <p>For more advice, see: <a href="">GOV.UK: Work and financial support</a></p>
+                </div>
+              </details>
+
+              <h2>Contact the NHS isolation note team</h2>
+              <p>If you cannot download your isolation note, <a href="">contact us</a>.</p>
+
+            </div>
+          </div>
+        </article>
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+             Page last reviewed: 28 September 2023
+            <br>
+            Next review due: 28 September 2026
+          </p>
+        </div>
+
+
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+
