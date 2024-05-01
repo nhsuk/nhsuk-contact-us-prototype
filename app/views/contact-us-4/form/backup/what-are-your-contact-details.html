@@ -21,11 +21,10 @@ What are your contact details?
       <!-- Go back -->
       <br>
       <div class="nhsuk-back-link">
-              <a class="nhsuk-back-link__link" href="why-are-you-contacting-the-NHS-website-team-today">
+              <a class="nhsuk-back-link__link" href="../give-feedback-about-the-nhs-website">
                   <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
             </svg>
-      
                   Go back
               </a>
       </div>
@@ -48,6 +47,8 @@ What are your contact details?
                     </h1>
                   </legend>
     
+                  <p>We'll only use your contact details to reply to you. View our <a href="">privacy policy</a> to find out what happens to your personal information.</p>
+
                     <div class="nhsuk-hint" id="contact-hint">
                     We'll only use your contact details to reply to you.
                     </div>
@@ -55,13 +56,13 @@ What are your contact details?
                     <div class="nhsuk-form-group">
                         <label class="nhsuk-label" for="email-address">Email address </label>
                         <span id="email-address-error" class="field-validation-valid" data-valmsg-for="email-address" data-valmsg-replace="true"></span>
-                        <input class="nhsuk-input" aria-describedby="email-address-error" autocomplete="given-name" type="text" data-val="true" data-val-maxlength="Enter a valid email address" data-val-maxlength-max="35" data-val-required="Enter your email address" id="email-address" maxlength="35" name="email-address" value="">
+                        <input class="nhsuk-input" aria-describedby="email-address-error" autocomplete="given-name" type="text" data-val="true" data-val-maxlength="Enter a valid email address" data-val-maxlength-max="35" data-val-required="Enter your email address" id="email-address" maxlength="35" name="email-address" value="{{ data['email-address'] }}" type="text">
                     </div>
     
                     <div class="nhsuk-form-group">
                         <label class="nhsuk-label" for="full-name">Full name (optional)</label>
-                        <span id="lastname-error" class="field-validation-valid" data-valmsg-for="full-name" data-valmsg-replace="true"></span>
-                        <input class="nhsuk-input" autocomplete="full-name" type="text" data-val="true" data-val-maxlength="" data-val-maxlength-max="35" id="LastName" maxlength="50" name="full-name" value="">
+                        <span id="full-name-error" class="field-validation-valid" data-valmsg-for="full-name" data-valmsg-replace="true"></span>
+                        <input class="nhsuk-input" autocomplete="full-name" type="text" data-val="true" data-val-maxlength="" data-val-maxlength-max="35" id="full-name" maxlength="50" name="full-name" value="{{ data['full-name'] }}" type="text">
                     </div>
     
                 </fieldset>
@@ -72,8 +73,6 @@ What are your contact details?
                   </button>
                 </form>
     
-
-
 
 
 

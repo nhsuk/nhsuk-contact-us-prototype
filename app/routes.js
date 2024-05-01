@@ -97,7 +97,7 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
     // Check whether the variable matches a condition
     if (contectYesNo === 'yes-contactMe') {
       // Send user to provide contact details page
-      res.redirect('what-are-your-contact-details2');
+      res.redirect('check-your-answers');
     } else {
       // Send user to check your answers (skip contact details page)
       res.redirect('check-your-answers2');
