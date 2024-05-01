@@ -4,7 +4,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Tell us more about the mistake
+  Tell us more about the mistake you want to report
 {% endblock %}
 
 {% block beforeContent %}
@@ -36,7 +36,7 @@
             <div class="nhsuk-form-group">
               <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                 <h1 class="nhsuk-fieldset__heading">
-                  Tell us more about the mistake
+                  Tell us more about the mistake you want to report
                 </h1>
               </legend>
 
@@ -55,18 +55,14 @@
           </div>
 
           <fieldset class="nhsuk-fieldset">
-            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
-              <h3 class="nhsuk-fieldset__heading">
-                What page would you like to report a mistake on? (optional)
-              </h3>
-            </legend>
-
-              <div class="nhsuk-hint" id="contact-hint">
-                For example, https://www.nhs.uk/conditions/chickenpox/
-              </div>
+            <label class="nhsuk-label" for="full-name">URL of the page with the mistake (optional)</label>
+            
+            <div class="nhsuk-hint" id="contact-hint">
+              For example, https://www.nhs.uk/conditions/chickenpox/
+            </div>
 
               <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="page-url">Page URL</label>
+
                   <span id="page-url-error" class="field-validation-valid" data-valmsg-for="page-url" data-valmsg-replace="true"></span>
                   <input class="nhsuk-input nhsuk-u-width-three-quarters" id="page-url" name="page-url" value="{{ data['page-url'] }}" type="text">
               </div>
@@ -85,7 +81,7 @@
 
 
           <div>
-            <form action="do-you-wish-to-be-contacted" method="get">
+            <form action="do-you-want-a-response-about-the-outcome-of-your-feedback" method="get">
               <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="get">
                 Continue
               </button>
