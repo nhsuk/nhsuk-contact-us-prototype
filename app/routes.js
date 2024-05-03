@@ -90,7 +90,23 @@ router.post('/contact-us/form/work-for-nhs-answer', (req, res) => {
   // contact-us-4
 
   // Branching
-  router.post('/contact-us-4/form/give-feedback-about-the-website/do-you-want-a-response-about-the-outcome-of-your-feedback', (req, res) => {
+  router.post('/contact-us-4/i-want-to-make-a-suggestion-about-the-nhs-website/do-you-want-a-response-about-the-outcome-of-your-suggestion', (req, res) => {
+    // Make a variable and give it the value from 'know-nhs-number'
+    var contectYesNo = req.session.data['contectYesNo'];
+
+    // Check whether the variable matches a condition
+    if (contectYesNo === 'yes-contactMe') {
+      // Send user to provide contact details page
+      res.redirect('check-your-answers');
+    } else {
+      // Send user to check your answers (skip contact details page)
+      res.redirect('check-your-answers2');
+    }
+  });
+
+
+
+  router.post('/contact-us-4/i-want-to-report-a-mistake-on-the-nhs-website/do-you-want-a-response-about-the-outcome-of-your-feedback', (req, res) => {
     // Make a variable and give it the value from 'know-nhs-number'
     var contectYesNo = req.session.data['contectYesNo'];
 

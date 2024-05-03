@@ -5,7 +5,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Do you want a response about the outcome of your feedback?
+  Do you want a response about the outcome of your suggestion?
 {% endblock %}
 
 {% block beforeContent %}
@@ -24,11 +24,10 @@
       <!-- Go back -->
       <br>
       <div class="nhsuk-back-link">
-        <a class="nhsuk-back-link__link" href="tell-us-more-about-the-mistake-you-want-to-report">
+        <a class="nhsuk-back-link__link" href="tell-us-more-details-about-your-suggestion-about-the-nhs-website">
             <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
       </svg>
-
             Go back
         </a>
       </div>
@@ -39,7 +38,7 @@
           <div class="nhsuk-grid-column-two-thirds">
             <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
               <h1 class="nhsuk-fieldset__heading">
-                Do you want a response about the outcome of your feedback?
+                Do you want a response about the outcome of your suggestion?
               </h1>
             </legend>
           </div>
@@ -51,7 +50,7 @@
 
                 {% from 'radios/macro.njk' import radios %}
 
-                <form action="/contact-us-4/form/give-feedback-about-the-website/do-you-want-a-response-about-the-outcome-of-your-feedback" method="post">
+                <form action="/contact-us-4/i-want-to-make-a-suggestion-about-the-nhs-website/do-you-want-a-response-about-the-outcome-of-your-suggestion" method="post">
 
                 {{ radios({
                   "idPrefix": "contectYesNo",
@@ -65,12 +64,12 @@
                   "items": [
                     {
                       "value": "yes-contactMe",
-                      "text": "Yes, I want a response to my feedback"
+                      "text": "Yes, I want a response to my suggestion"
                     },
 
                     {
                       "value": "no",
-                      "text": "No, I do not want a response to my feedback"
+                      "text": "No, I do not want a response to my suggestion"
                     }
                   ]
                 }) }}

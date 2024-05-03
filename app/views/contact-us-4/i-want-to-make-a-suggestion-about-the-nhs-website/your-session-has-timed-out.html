@@ -1,0 +1,55 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-1.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Your session has timed out
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container ">
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" role="main">
+    <div class="nhsuk-width-container">
+
+      <!-- Go back -->
+      <br>      <br>
+
+      
+      <!-- Details -->      
+      <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
+        <div class="nhsuk-grid-row">
+
+        </div>
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+            
+              <h1 class="nhsuk-heading-l">Your session has timed out</h1>
+
+              <p>You will need to start again to use this service</p>
+              <p><a href="../contact-the-nhs-website-team">Contact the NHS website team</a></p>
+
+            </div>
+
+          </div>
+        </article>
+
+      
+
+      </fieldset>
+
+
+</main>
+</div>
+
+  </main>
+</div>
+{% endblock %}
+
