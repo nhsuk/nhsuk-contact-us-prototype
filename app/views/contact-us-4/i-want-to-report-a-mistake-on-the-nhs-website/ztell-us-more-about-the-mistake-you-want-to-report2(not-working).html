@@ -4,7 +4,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Tell us more about the mistake you want to report
+    Tell us more about the mistake you want to report
 {% endblock %}
 
 {% block beforeContent %}
@@ -25,21 +25,18 @@
                   <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
             </svg>
-    
                   Go back
               </a>
       </div>
       
       <!-- Details -->      
       <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0 nhsuk-u-padding-top-0" id="maincontent" lang="en-GB">
-        <div class="nhsuk-grid-row">
 
-        </div>
         <article>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
 
-              <form method="post" action="do-you-want-a-response-about-the-outcome-of-your-feedback2">
+                 <!--<form method="post" action="do-you-want-a-response-about-the-outcome-of-your-feedback">-->      
 
                 <fieldset class="nhsuk-fieldset">
                   <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
@@ -49,31 +46,26 @@
                   </legend>
     
     
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="message">
-                      Can you provide more detail? 
-                    </label>
-                    <div class="nhsuk-hint" id="message-hint">
-                      Do not include personal or medical details in your message, for example, do not include your NHS number, date of birth, medical diagnosis, or medical history.
+                    <div class="nhsuk-form-group">
+                        <label class="nhsuk-label" for="placeholder1">Your message</label>
+                        <span id="placeholder1-error" class="field-validation-valid" data-valmsg-for="placeholder1" data-valmsg-replace="true"></span>
+                        <input class="nhsuk-input" aria-describedby="placeholder1-error" autocomplete="given-name" type="text" data-val="true" data-val-maxlength="Enter a valid email address" data-val-maxlength-max="35" data-val-required="Enter your email address" id="placeholder1" maxlength="35" name="placeholder1" value="{{ data['placeholder1'] }}" type="text">
                     </div>
-                    <textarea class="nhsuk-textarea" id="message" name="message" rows=" 10 " aria-describedby="message-hint" value="{{ data['message'] }}" type="text">{{ data['message'] }}</textarea>
-                    <div class="nhsuk-hint nhsuk-character-count__message" id="more-detail-info">
-                      You have 500 characters remaining
-                    </div>             
-                  </div>
-
     
                     <div class="nhsuk-form-group">
-                        <label class="nhsuk-label" for="url">URL of the page with the mistake (optional)</label>
-                        <div class="nhsuk-hint" id="url-hint">
+                        <label class="nhsuk-label" for="placeholder2">URL of the page with the mistake (optional)</label>
+
+                        <div class="nhsuk-hint" id="contact-hint">
                           For example, https://www.nhs.uk/conditions/chickenpox/
                         </div>
 
-                        <input class="nhsuk-input nhsuk-u-width-three-quarters" autocomplete="url" type="text" data-val="true" data-val-maxlength="" data-val-maxlength-max="35" id="url" maxlength="50" name="url" value="{{ data['url'] }}" type="text">
+                        <span id="placeholder2-error" class="field-validation-valid" data-valmsg-for="placeholder2" data-valmsg-replace="true"></span>
+                        <input class="nhsuk-input" autocomplete="placeholder2" type="text" data-val="true" data-val-maxlength="" data-val-maxlength-max="35" id="placeholder2" maxlength="50" name="placeholder2" value="{{ data['placeholder2'] }}" type="text">
                     </div>
-
-
+    
                 </fieldset>
+
+                
     
                 <form action="do-you-want-a-response-about-the-outcome-of-your-feedback2" method="post">
                   <button class="nhsuk-button" data-module="nhsuk-button" type="submit" method="post">
@@ -81,21 +73,15 @@
                   </button>
                 </form>
   
-
               
-              </div>
-
             </div>
+
           </div>
         </article>
 
-      
 
-      </fieldset>
-
-
-</main>
-</div>
+      </main>
+    </div>
 
   </main>
 </div>
